@@ -1,0 +1,12 @@
+Cost from Y to Z: 702.0
+Cost from W to Y: 602.0
+Cost from P to W: 102.0
+P to W to Y to Z totalprice: 1406.0
+O not in map!
+O not in map!
+No flight from W to Q
+Cost from R to X: 301.0
+Cost from Y to R: 701.0
+Cost from W to Y: 602.0
+Cost from T to W: 501.0
+T to W to Y to R to X totalprice: 2105.0

@@ -1,0 +1,82 @@
+/*
+   Interface to specify the behavior/operations of the Set ADT 
+*/ 
+
+public interface SetInterface<E> extends Iterable<E>{
+
+    /*  Provide signature/headers for the following methods:
+    
+    - size: a method that returns the number of elements in the
+    set as an int value,
+    - display: a method that prints out the contents of the set,
+    - toString: a method that returns a string representation of the set,
+    - add: a method that takes an element of type E and inserts
+    it into the set,
+    - addAll: a method that takes an array of elements of type
+    E and inserts them into the set,
+    - union: a method that takes a Set as an argument and returns a
+    new Set that is the union of the current set and the argument (provided below), 
+    - intersection: a method that takes a Set as an argument and
+    returns a new Set that is the intersection of the current set and the
+    argument,
+    - difference: a method that takes a Set as an argument and
+    returns a new Set that is the difference of the current set and the
+    argument,
+    - contains: a method that takes an element of type E and returns a
+    boolean value depending on whether the given E is contained in
+    the current set or not. 
+    
+    */
+
+    // Returns the size of the list
+    // @return int that is the size of the list
+    public int size();
+
+    // Prints the contents of the list
+    public void display();
+
+    // Returns the contents of the list in a String
+    // @return a String that is the contents of the entire list
+    public String toString();
+
+    // Adds an item of type E at the end of the list
+    // @param item that is the item of type E that is to be 
+    // added to the list
+    public void add(E item);
+    
+    // Adds an array with items of type E into the list
+    // @param that is an array of type E that is to be added into 
+    //the list
+    public void addAll(E [] array);
+
+    // Returns a set that is the union of the current set
+    // and the set that is passed as the argument
+    // @param setList a set of type E that will be added to the current set
+    // @return a set that is the union of the param setList and the 
+    // current set
+    public SetInterface<E> union(SetInterface<E> setList);
+
+    // Returns a set that is the intersection of the current set
+    // and the set that is passed as the argument
+    // @param setList a set of type E that will be intersected with the 
+    // current set
+    // @return a set that is the intersection of the param setList and the 
+    // current set
+    public SetInterface<E> intersection(SetInterface<E> setList);
+
+    // Returns a set that is the difference of the current set
+    // and the set that is passed as the argument
+    // @param setList a set of type E that will be subtracted (as a set operation) 
+    // from the current set
+    // @return a set that is the difference of the param setList and the 
+    // current set
+    public SetInterface<E> difference(SetInterface<E> setList);
+
+    // Takes an argument of type E and returns a boolean value
+    // based on whether or not that item is contained within the set
+    // @param item of type E that will be scanned for in the set
+    // @return boolean that represents whether or not item is contained 
+    // in the set
+    public boolean contains( E item );
+
+    }
